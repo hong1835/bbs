@@ -1,0 +1,55 @@
+
+body {
+    background-color: #fff;
+    color:#333;
+    font-family: Arial,"微软雅黑","Microsoft yahei","Hiragino Sans GB","冬青黑体简体中文 w3","Microsoft Yahei","Hiragino Sans GB","冬青黑体简体中文 w3",STXihei,"华文细黑",SimSun,"宋体",Heiti,"黑体",sans-serif;
+}
+
+.head-img img{
+    height: 125px;
+    width: 220px;
+}
+
+.blog-box {
+    border-bottom: 1px dashed darkgoldenrod;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.blog-summary-btn {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.blog-summary-btn span {
+    margin-left: 20px;
+}
+
+.blog-summary-btn span:hover {
+    color: red;
+}
+
+.blog-summary-btn,.blog-summary {
+    opacity: 0.7;
+}
+
+.comment-content,.comment-date {
+    margin-left: 20px;
+    opacity: 0.7;
+}
+
+
+.chat-box {
+    height: 500px;
+    border: 1px solid greenyellow;
+}
+
+.contact-list {
+    height: 100%;
+    border: 1px solid crimson;
+}
+
+.dialog-box {
+    height: 100%;
+    border: 1px solid purple;
+}

@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+{% load custom %}
+
+{% block content-left %}
+
+    <div class="blog-head">
+        <h3>{{ article.title }}</h3>
+        <div class="blog-summary-btn">
+            <a>{{ article.author.name }}</a>
+            <span>{{ article.publish_date }}</span>
+            <span><i class="fa fa-comment" aria-hidden="true"></i>{{ article.comment_set.select_related.count }}</span>
+            <span><i class="fa fa-star" aria-hidden="true"></i>{{ article.thumpup_set.select_related.count }}</span>
+
+        </div>
+        <div class="blog-content">
+            {{ article.content|safe }}
+        </div>
+        <div class="comments-box">
+            {% build_comment_tree comments %}
+
+            <hr>
+
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block content-right %}
+    right bar
+{% endblock %}
